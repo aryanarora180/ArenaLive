@@ -164,6 +164,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/live_score_type_three_set_indicator" />
 
+        <ImageView
+            android:id="@+id/scoreBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/live_score_sport_name"
+            app:layout_constraintEnd_toStartOf="@+id/live_score_sport_name"
+            app:layout_constraintTop_toTopOf="@+id/live_score_sport_name"
+            app:srcCompat="@drawable/outline_arrow_back_24" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

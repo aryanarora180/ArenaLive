@@ -84,11 +84,11 @@ public class ScheduleSportAdapter extends RecyclerView.Adapter<ScheduleSportAdap
 
     private void openLiveScoreFragment(String documentID, long sportType) {
         if (sportType == ScheduleSport.SPORT_TYPE_ONE)
-            mFragmentManager.beginTransaction().replace(layoutId, new TypeOneScoresFragment(documentID), documentID).addToBackStack(documentID).commit();
+            mFragmentManager.beginTransaction().replace(layoutId, new TypeOneScoresFragment(documentID, layoutId), documentID).addToBackStack(documentID).commit();
         else if (sportType == ScheduleSport.SPORT_TYPE_TWO)
-            mFragmentManager.beginTransaction().replace(layoutId, new TypeTwoScoresFragment(documentID), documentID).addToBackStack(documentID).commit();
+            mFragmentManager.beginTransaction().replace(layoutId, new TypeTwoScoresFragment(documentID, layoutId), documentID).addToBackStack(documentID).commit();
         else if (sportType == ScheduleSport.SPORT_TYPE_THREE)
-            mFragmentManager.beginTransaction().replace(layoutId, new TypeThreeScoresFragment(documentID), documentID).addToBackStack(documentID).commit();
+            mFragmentManager.beginTransaction().replace(layoutId, new TypeThreeScoresFragment(documentID, layoutId), documentID).addToBackStack(documentID).commit();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

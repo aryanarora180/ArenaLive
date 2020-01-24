@@ -39,8 +39,12 @@ public class TypeTwoScoresFragment extends Fragment {
     private ConstraintLayout viewsLayout;
     private ProgressBar progressBar;
 
-    public TypeTwoScoresFragment(String documentID) {
+    private ImageView back;
+    private int layoutId;
+
+    public TypeTwoScoresFragment(String documentID, int layoutId) {
         this.documentID = documentID;
+        this.layoutId = layoutId;
     }
 
     @Override
@@ -63,6 +67,14 @@ public class TypeTwoScoresFragment extends Fragment {
         final TextView teamBOversTextView = root.findViewById(R.id.live_score_type_two_overs_b);
         final LinearLayout liveIndicator = root.findViewById(R.id.live_indicator_linear_layout);
         final ImageView liveIndicatorImageView = root.findViewById(R.id.live_indicator_image_view);
+
+        back = root.findViewById(R.id.scoreBackImageView);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(layoutId, new ScheduleFragment(layoutId)).commit();
+            }
+        });
 
         setLoadingView();
 

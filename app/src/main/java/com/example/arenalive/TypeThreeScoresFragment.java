@@ -39,8 +39,12 @@ public class TypeThreeScoresFragment extends Fragment {
     private ConstraintLayout viewsLayout;
     private ProgressBar progressBar;
 
-    public TypeThreeScoresFragment(String documentID) {
+    private ImageView back;
+    private int layoutId;
+
+    public TypeThreeScoresFragment(String documentID, int layoutId) {
         this.documentID = documentID;
+        this.layoutId = layoutId;
     }
 
     @Override
@@ -63,6 +67,14 @@ public class TypeThreeScoresFragment extends Fragment {
         final TextView set3WinnerTextView = root.findViewById(R.id.live_score_type_three_set_3_winner);
         final LinearLayout liveIndicator = root.findViewById(R.id.live_indicator_linear_layout);
         final ImageView liveIndicatorImageView = root.findViewById(R.id.live_indicator_image_view);
+
+        back = root.findViewById(R.id.scoreBackImageView);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(layoutId, new ScheduleFragment(layoutId)).commit();
+            }
+        });
 
         setLoadingView();
 
