@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Arena 2020</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_schedule">Schedule</string>
+    <string name="menu_sports">Sports</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_feed">Feed</string>
+    <string name="menu_sos">SOS</string>
+    <string name="menu_credits">App Credits</string>
+    <string name="menu_about">About us</string>
+    <string name="menu_reachus">Reach us</string>
+    <string name="menu_map">Campus Map</string>
+
+    <string name="live_score">Live scores</string>
+
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+
+    <string name="set">Set</string>
+
+    <string name="menu_announcements">Announcements</string>
+
+    <string name="scheduled">Scheduled</string>
+    <string name="only_live">Live</string>
+    <string name="live">Live: tap to view scores</string>
+    <string name="completed">Completed: tap to view scores</string>
+    <string name="only_completed">Completed</string>
+    <string name="completed_no_live">Completed. Winner:</string>
+    <string name="vs">vs</string>
+    <string name="no_filter">No filter</string>
+
+    <string name="chip_23">23RD</string>
+    <string name="chip_24">24TH</string>
+    <string name="chip_25">25TH</string>
+    <string name="chip_26">26TH</string>
+
+    <string name="firebase_collection_schedule">SportsSchedule</string>
+    <string name="firebase_collection_schedule_field_date">dateAndTime</string>
+    <string name="firebase_collection_schedule_field_sportCode">sportCode</string>
+    <string name="firebase_collection_schedule_field_matchStatus">matchStatus</string>
+    <string name="firebase_collection_schedule_field_name_team_a">teamA</string>
+    <string name="firebase_collection_schedule_field_name_team_b">teamB</string>
+    <string name="firebase_collection_schedule_field_score_team_a">teamAScore</string>
+    <string name="firebase_collection_schedule_field_score_team_b">teamBScore</string>
+    <string name="firebase_collection_schedule_field_batFirst">batFirst</string>
+    <string name="firebase_collection_schedule_field_score_currentInnings">currentInnings</string>
+    <string name="firebase_collection_schedule_field_overs_team_a">teamAOvers</string>
+    <string name="firebase_collection_schedule_field_overs_team_b">teamBOvers</string>
+    <string name="firebase_collection_schedule_field_wickets_team_a">teamAWickets</string>
+    <string name="firebase_collection_schedule_field_wickets_team_b">teamBWickets</string>
+    <string name="firebase_collection_schedule_field_currentSet">currentSet</string>
+    <string name="firebase_collection_schedule_field_winner">winner</string>
+    <string name="firebase_collection_schedule_field_setOneWinner">setOneWinner</string>
+    <string name="firebase_collection_schedule_field_setTwoWinner">setTwoWinner</string>
+    <string name="firebase_collection_schedule_field_setThreeWinner">setThreeWinner</string>
+    <string name="firebase_collection_schedule_field_setOneScore">setOneScore</string>
+    <string name="firebase_collection_schedule_field_setTwoScore">setTwoScore</string>
+    <string name="firebase_collection_schedule_field_setThreeScore">setThreeScore</string>
+</resources>
